@@ -27,9 +27,13 @@
 
 ---
 
-## 🚀 快速开始
+## 🚀 克隆与运行
 
 ```bash
+# 克隆仓库
+git clone http://github.com/1829317945/apt_helper.git
+cd apt_helper
+
 # 赋予执行权限
 chmod +x apt-helper.sh
 
@@ -164,7 +168,7 @@ log_error(){ echo -e "${RED}[错误]${NC} $1"; }
 ## 📁 脚本结构
 
 ```
-apt-helper.sh
+apt_mgr.sh
 ├── 常量定义        # 终端颜色码（RED / GREEN / YELLOW / NC）
 ├── 权限检查        # UID 检测，必须 root/sudo 运行
 ├── log_success()   # 绿色成功日志
